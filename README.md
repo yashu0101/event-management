@@ -1,1 +1,2 @@
-# event-management
+# EventManagmentServer
+Project Work

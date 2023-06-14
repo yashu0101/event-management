@@ -1,0 +1,11 @@
+{
+  "builds": [{ "src": "/app.js", "use": "@vercel/node" }],
+  "routes": [
+    { "src": "/uploads/events/(.*)", "dest": "/uploads/events/$1" },
+    { "src": "/uploads/gallery/(.*)", "dest": "/uploads/gallery/$1" },
+    { "src": "/uploads/reviews/(.*)", "dest": "/uploads/reviews/$1" },
+    { "src": "/uploads/user-avatar/(.*)", "dest": "/uploads/user-avatar/$1" },
+    { "src": "/uploads/vanues/(.*)", "dest": "/uploads/vanues/$1" },
+    { "src": "/(.*)", "dest": "/app.js" }
+  ]
+}
