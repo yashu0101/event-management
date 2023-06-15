@@ -2,7 +2,7 @@
   "builds": [{ "src": "/app.js", "use": "@vercel/node" }],
   "routes": [
     {
-      "src": "/uploads/events/(.*)",
+      "src": "/uploads/(.*)",
       "dest": "/v1/routes/eventBooking.route.js"
     },
     { "src": "/uploads/gallery/(.*)", "dest": "/uploads/gallery/$1" },
